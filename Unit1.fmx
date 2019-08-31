@@ -1,0 +1,146 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 535
+  ClientWidth = 321
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Layout_Menu: TLayout
+    Align = Contents
+    Size.Width = 321.000000000000000000
+    Size.Height = 535.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claBlack
+      Opacity = 0.800000011920929000
+      Size.Width = 321.000000000000000000
+      Size.Height = 535.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Animate_menu: TFloatAnimation
+      AnimationType = InOut
+      Duration = 0.500000000000000000
+      Interpolation = Circular
+      OnFinish = Animate_menuFinish
+      PropertyName = 'Position.Y'
+      StartValue = 500.000000000000000000
+      StopValue = 400.000000000000000000
+    end
+    object Circle2: TCircle
+      Anchors = [akRight, akBottom]
+      Fill.Color = claWhite
+      Position.X = 166.000000000000000000
+      Position.Y = 467.000000000000000000
+      Size.Width = 58.000000000000000000
+      Size.Height = 58.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Image1: TImage
+        MultiResBitmap.Height = 32
+        MultiResBitmap.Width = 32
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              001A494441545847EDC101010000008220FFAF6E4840000000C0B91A10200001
+              9D7849430000000049454E44AE426082}
+            FileName = 'C:\Users\kikatokiro\Desktop\icons8_Facebook_32px_1.png'
+          end>
+        Align = Center
+        WrapMode = Center
+        OnClick = Image1Click
+      end
+    end
+    object Circle3: TCircle
+      Anchors = [akRight, akBottom]
+      Fill.Color = claWhite
+      Position.X = 254.000000000000000000
+      Position.Y = 371.000000000000000000
+      Size.Width = 58.000000000000000000
+      Size.Height = 58.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Image2: TImage
+        MultiResBitmap.Width = 32
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              001A494441545847EDC101010000008220FFAF6E4840000000C0B91A10200001
+              9D7849430000000049454E44AE426082}
+            FileName = 'C:\Users\kikatokiro\Desktop\icons8_Circled_Play_32px.png'
+          end>
+        Align = Center
+        Size.Width = 31.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = Image1Click
+      end
+    end
+    object Circle4: TCircle
+      Anchors = [akRight, akBottom]
+      Fill.Color = claWhite
+      Position.X = 188.000000000000000000
+      Position.Y = 403.000000000000000000
+      Size.Width = 58.000000000000000000
+      Size.Height = 58.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Image3: TImage
+        MultiResBitmap.Height = 32
+        MultiResBitmap.Width = 32
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              001A494441545847EDC101010000008220FFAF6E4840000000C0B91A10200001
+              9D7849430000000049454E44AE426082}
+            FileName = 'C:\Users\kikatokiro\Desktop\icons8_Twitter_32px.png'
+          end>
+        Align = Center
+        WrapMode = Center
+        OnClick = Image1Click
+      end
+    end
+  end
+  object Circle1: TCircle
+    Anchors = [akRight, akBottom]
+    Fill.Color = xFFFE4A56
+    Position.X = 232.000000000000000000
+    Position.Y = 448.000000000000000000
+    Size.Width = 82.000000000000000000
+    Size.Height = 74.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Rectangle2: TRectangle
+      Align = Center
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        001A494441545847EDC101010000008220FFAF6E4840000000C0B91A10200001
+        9D7849430000000049454E44AE426082}
+      Fill.Bitmap.WrapMode = TileStretch
+      Fill.Kind = Bitmap
+      Size.Width = 38.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = Rectangle2Click
+    end
+  end
+end
